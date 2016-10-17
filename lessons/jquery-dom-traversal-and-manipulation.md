@@ -257,11 +257,11 @@ Start by looking at the [jQuery Events API](http://api.jquery.com/category/event
 
 The Events API tends to mimic the native DOM events from your last project, but with some abstraction to standardize across all of the browsers in use today.
 
-Our main focus today is going to be on the `.on()` method. As of jQuery 1.7 and later, this is the preferred method for binding events. You may see `.bind()` as well, but this support older code.
+Our main focus today is going to be on the `.on()` method. As of jQuery 1.7 and later, this is the preferred method for binding events. You may see `.bind()` as well, but this supports older code.
 
 #### Knowing Which Element We Clicked
 
-jQuery makes it do stuff to many elements ate the same time, but if we add event listeners to a bunch of boxes at the same time, then how we know which one the user clicked? Consider a situation where we have three boxes. When that particular box is clicked, we want to toggle a class. How do we know which box was clicked?
+jQuery makes it do stuff to many elements at the same time, but if we add event listeners to a bunch of boxes at the same time, then how we know which one the user clicked? Consider a situation where we have three boxes. When that particular box is clicked, we want to toggle a class. How do we know which box was clicked?
 
 It turns out that when we add an event listener using jQuery, we get a special little variable called `this`. Lucky for us, `this` is set to the box we clicked on.
 
